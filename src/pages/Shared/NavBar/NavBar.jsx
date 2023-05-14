@@ -75,7 +75,9 @@ const NavBar = () => {
           <Link className="text-2xl">
             <FiSearch />
           </Link>
-          <a className="btn btn-error btn-outline border-2">Appointment</a>
+          <a className="btn btn-error btn-outline border-2 normal-case text-lg">
+            Appointment
+          </a>
         </div>
       </div>
     </div>

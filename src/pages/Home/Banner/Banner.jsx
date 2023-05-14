@@ -3,10 +3,34 @@ const Banner = () => {
     <div className="flex justify-center">
       <div className="carousel lg:w-[1280px] rounded-lg md:h-[600px]">
         <div id="slide1" className="carousel-item relative w-full">
-          <img
-            src="/assets/images/banner/1.jpg"
-            className="w-full object-cover"
-          />
+          <div
+            className="hero"
+            style={{
+              backgroundImage: `url("/assets/images/banner/1.jpg")`,
+            }}
+          >
+            <div className="hero-overlay bg-opacity-20 bg-gradient-to-r from-[#151515]"></div>
+            <div className="hero-content absolute left-5 text-left text-neutral-content md:ps-14 ps-3">
+              <div className="max-w-md">
+                <h1 className="mb-5 text-6xl font-bold">
+                  Affordable <br /> Price For Car Servicing
+                </h1>
+                <p className="mb-5 capitalize">
+                  There are many variations of passages of available, but the
+                  majority have suffered alteration in some form
+                </p>
+                <div className="flex gap-5">
+                  <button className="btn bg-[#FF3811]  text-white normal-case hover:bg-[#f65b3c] text-lg">
+                    Discover More
+                  </button>
+                  <button className="btn btn-outline border-2 border-white text-white hover:bg-slate-800 normal-case text-lg">
+                    Latest Project
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="absolute flex justify-end gap-5 transform -translate-y-1/2 right-10 bottom-8">
             <a
               href="#slide6"
@@ -23,10 +47,33 @@ const Banner = () => {
           </div>
         </div>
         <div id="slide2" className="carousel-item relative w-full">
-          <img
-            src="/assets/images/banner/2.jpg"
-            className="w-full object-cover"
-          />
+          <div
+            className="hero"
+            style={{
+              backgroundImage: `url("/assets/images/banner/2.jpg")`,
+            }}
+          >
+            <div className="hero-overlay bg-opacity-20 bg-gradient-to-r from-[#151515]"></div>
+            <div className="hero-content absolute left-5 text-left text-neutral-content md:ps-14 ps-3">
+              <div className="max-w-md">
+                <h1 className="mb-5 text-6xl font-bold">
+                  Affordable <br /> Price For Car Servicing
+                </h1>
+                <p className="mb-5 capitalize">
+                  There are many variations of passages of available, but the
+                  majority have suffered alteration in some form
+                </p>
+                <div className="flex gap-5">
+                  <button className="btn bg-[#FF3811]  text-white normal-case hover:bg-[#f65b3c] text-lg">
+                    Discover More
+                  </button>
+                  <button className="btn btn-outline border-2 border-white text-white hover:bg-slate-800 normal-case text-lg">
+                    Latest Project
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="absolute flex justify-end gap-5 transform -translate-y-1/2 right-10 bottom-8">
             <a
               href="#slide1"
@@ -43,10 +90,33 @@ const Banner = () => {
           </div>
         </div>
         <div id="slide3" className="carousel-item relative w-full">
-          <img
-            src="/assets/images/banner/3.jpg"
-            className="w-full object-cover"
-          />
+          <div
+            className="hero"
+            style={{
+              backgroundImage: `url("/assets/images/banner/3.jpg")`,
+            }}
+          >
+            <div className="hero-overlay bg-opacity-20 bg-gradient-to-r from-[#151515]"></div>
+            <div className="hero-content absolute left-5 text-left text-neutral-content md:ps-14 ps-3">
+              <div className="max-w-md">
+                <h1 className="mb-5 text-6xl font-bold">
+                  Affordable <br /> Price For Car Servicing
+                </h1>
+                <p className="mb-5 capitalize">
+                  There are many variations of passages of available, but the
+                  majority have suffered alteration in some form
+                </p>
+                <div className="flex gap-5">
+                  <button className="btn bg-[#FF3811]  text-white normal-case hover:bg-[#f65b3c] text-lg">
+                    Discover More
+                  </button>
+                  <button className="btn btn-outline border-2 border-white text-white hover:bg-slate-800 normal-case text-lg">
+                    Latest Project
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="absolute flex justify-end gap-5 transform -translate-y-1/2 right-10 bottom-8">
             <a
               href="#slide2"
@@ -63,10 +133,33 @@ const Banner = () => {
           </div>
         </div>
         <div id="slide4" className="carousel-item relative w-full">
-          <img
-            src="/assets/images/banner/4.jpg"
-            className="w-full object-cover"
-          />
+          <div
+            className="hero"
+            style={{
+              backgroundImage: `url("/assets/images/banner/4.jpg")`,
+            }}
+          >
+            <div className="hero-overlay bg-opacity-20 bg-gradient-to-r from-[#151515]"></div>
+            <div className="hero-content absolute left-5 text-left text-neutral-content md:ps-14 ps-3">
+              <div className="max-w-md">
+                <h1 className="mb-5 text-6xl font-bold">
+                  Affordable <br /> Price For Car Servicing
+                </h1>
+                <p className="mb-5 capitalize">
+                  There are many variations of passages of available, but the
+                  majority have suffered alteration in some form
+                </p>
+                <div className="flex gap-5">
+                  <button className="btn bg-[#FF3811]  text-white normal-case hover:bg-[#f65b3c] text-lg">
+                    Discover More
+                  </button>
+                  <button className="btn btn-outline border-2 border-white text-white hover:bg-slate-800 normal-case text-lg">
+                    Latest Project
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="absolute flex justify-end gap-5 transform -translate-y-1/2 right-10 bottom-8">
             <a
               href="#slide3"
@@ -83,10 +176,33 @@ const Banner = () => {
           </div>
         </div>
         <div id="slide5" className="carousel-item relative w-full">
-          <img
-            src="/assets/images/banner/5.jpg"
-            className="w-full object-cover"
-          />
+          <div
+            className="hero"
+            style={{
+              backgroundImage: `url("/assets/images/banner/5.jpg")`,
+            }}
+          >
+            <div className="hero-overlay bg-opacity-20 bg-gradient-to-r from-[#151515]"></div>
+            <div className="hero-content absolute left-5 text-left text-neutral-content md:ps-14 ps-3">
+              <div className="max-w-md">
+                <h1 className="mb-5 text-6xl font-bold">
+                  Affordable <br /> Price For Car Servicing
+                </h1>
+                <p className="mb-5 capitalize">
+                  There are many variations of passages of available, but the
+                  majority have suffered alteration in some form
+                </p>
+                <div className="flex gap-5">
+                  <button className="btn bg-[#FF3811]  text-white normal-case hover:bg-[#f65b3c] text-lg">
+                    Discover More
+                  </button>
+                  <button className="btn btn-outline border-2 border-white text-white hover:bg-slate-800 normal-case text-lg">
+                    Latest Project
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="absolute flex justify-end gap-5 transform -translate-y-1/2 right-10 bottom-8">
             <a
               href="#slide4"
@@ -103,10 +219,33 @@ const Banner = () => {
           </div>
         </div>
         <div id="slide6" className="carousel-item relative w-full">
-          <img
-            src="/assets/images/banner/6.jpg"
-            className="w-full object-cover"
-          />
+          <div
+            className="hero"
+            style={{
+              backgroundImage: `url("/assets/images/banner/6.jpg")`,
+            }}
+          >
+            <div className="hero-overlay bg-opacity-20 bg-gradient-to-r from-[#151515]"></div>
+            <div className="hero-content absolute left-5 text-left text-neutral-content md:ps-14 ps-3">
+              <div className="max-w-md">
+                <h1 className="mb-5 text-6xl font-bold">
+                  Affordable <br /> Price For Car Servicing
+                </h1>
+                <p className="mb-5 capitalize">
+                  There are many variations of passages of available, but the
+                  majority have suffered alteration in some form
+                </p>
+                <div className="flex gap-5">
+                  <button className="btn bg-[#FF3811]  text-white normal-case hover:bg-[#f65b3c] text-lg">
+                    Discover More
+                  </button>
+                  <button className="btn btn-outline border-2 border-white text-white hover:bg-slate-800 normal-case text-lg">
+                    Latest Project
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="absolute flex justify-end gap-5 transform -translate-y-1/2 right-10 bottom-8">
             <a
               href="#slide5"
