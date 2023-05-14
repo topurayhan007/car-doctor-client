@@ -12,7 +12,7 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-20 bg-gradient-to-r from-[#151515]"></div>
             <div className="hero-content absolute left-5 text-left text-neutral-content md:ps-14 ps-3">
               <div className="max-w-md">
-                <h1 className="mb-5 text-6xl font-bold">
+                <h1 className="mb-8 text-6xl font-bold">
                   Affordable <br /> Price For Car Servicing
                 </h1>
                 <p className="mb-5 capitalize">
@@ -56,7 +56,7 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-20 bg-gradient-to-r from-[#151515]"></div>
             <div className="hero-content absolute left-5 text-left text-neutral-content md:ps-14 ps-3">
               <div className="max-w-md">
-                <h1 className="mb-5 text-6xl font-bold">
+                <h1 className="mb-8 text-6xl font-bold">
                   Affordable <br /> Price For Car Servicing
                 </h1>
                 <p className="mb-5 capitalize">
@@ -99,7 +99,7 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-20 bg-gradient-to-r from-[#151515]"></div>
             <div className="hero-content absolute left-5 text-left text-neutral-content md:ps-14 ps-3">
               <div className="max-w-md">
-                <h1 className="mb-5 text-6xl font-bold">
+                <h1 className="mb-8 text-6xl font-bold">
                   Affordable <br /> Price For Car Servicing
                 </h1>
                 <p className="mb-5 capitalize">
@@ -142,7 +142,7 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-20 bg-gradient-to-r from-[#151515]"></div>
             <div className="hero-content absolute left-5 text-left text-neutral-content md:ps-14 ps-3">
               <div className="max-w-md">
-                <h1 className="mb-5 text-6xl font-bold">
+                <h1 className="mb-8 text-6xl font-bold">
                   Affordable <br /> Price For Car Servicing
                 </h1>
                 <p className="mb-5 capitalize">
@@ -185,7 +185,7 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-20 bg-gradient-to-r from-[#151515]"></div>
             <div className="hero-content absolute left-5 text-left text-neutral-content md:ps-14 ps-3">
               <div className="max-w-md">
-                <h1 className="mb-5 text-6xl font-bold">
+                <h1 className="mb-8 text-6xl font-bold">
                   Affordable <br /> Price For Car Servicing
                 </h1>
                 <p className="mb-5 capitalize">
@@ -228,7 +228,7 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-20 bg-gradient-to-r from-[#151515]"></div>
             <div className="hero-content absolute left-5 text-left text-neutral-content md:ps-14 ps-3">
               <div className="max-w-md">
-                <h1 className="mb-5 text-6xl font-bold">
+                <h1 className="mb-8 text-6xl font-bold">
                   Affordable <br /> Price For Car Servicing
                 </h1>
                 <p className="mb-5 capitalize">
