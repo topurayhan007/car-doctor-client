@@ -20,7 +20,7 @@ const About = () => {
           </div>
 
           <div className="flex-1">
-            <h1 className="text-lg font-bold mb-5 text-[#FF3811]">About Us</h1>
+            <h1 className="text-2xl font-bold mb-5 text-[#FF3811]">About Us</h1>
             <h1 className="text-5xl font-bold">
               We are qualified <br /> & of experience <br /> in this field
             </h1>
