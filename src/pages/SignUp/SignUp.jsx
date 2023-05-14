@@ -1,14 +1,46 @@
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProviders";
 
 const SignUp = () => {
+  const { createUser, updateUserInfo, logOut } = useContext(AuthContext);
+
   const handleSignUp = (event) => {
     event.preventDefault();
     const form = event.target;
+    const name = form.name.value;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(email, password);
+    console.log(name, email, password);
+
+    createUser(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+
+        // Updates the Name after user is created
+        updateUserInfo(name)
+          .then(() => {
+            console.log("Profile Updated!");
+            form.reset();
+          })
+          .catch((error2) => {
+            console.log(error2.message);
+          });
+
+        // User automatically logs in after registration,
+        // so calling LogOut from user to Login
+        logOut()
+          .then((result) => {
+            console.log("User created successfully", result);
+          })
+          .catch((error) => {
+            console.log(error.message);
+          });
+      })
+      .catch((error) => console.log(error));
   };
 
   return (
@@ -64,7 +96,7 @@ const SignUp = () => {
                     type="submit"
                     className="btn normal-case text-lg bg-[#FF3811] border-0 hover:bg-[#ff6041]"
                   >
-                    Login
+                    Sign Up
                   </button>
                 </div>
               </div>

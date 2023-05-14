@@ -1,15 +1,44 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProviders";
 
 /* eslint-disable react/no-unescaped-entities */
 const Login = () => {
+  const { signIn, signInWithGoogle } = useContext(AuthContext);
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const from = location.state?.from?.pathname || "/";
+
   const handleLogin = (event) => {
     event.preventDefault();
     const form = event.target;
     const email = form.email.value;
     const password = form.password.value;
     console.log(email, password);
+
+    signIn(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        navigate(from, { replace: true });
+      })
+      .catch((error) => console.log(error));
+  };
+
+  // Google SignIn function
+  const handleGoogleSignIn = () => {
+    signInWithGoogle()
+      .then((result) => {
+        console.log(result.user);
+        navigate(from, { replace: true });
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
   };
 
   return (
@@ -58,7 +87,7 @@ const Login = () => {
                     type="submit"
                     className="btn normal-case text-lg bg-[#FF3811] border-0 hover:bg-[#ff6041]"
                   >
-                    Login
+                    Sign In
                   </button>
                 </div>
               </div>
@@ -82,7 +111,7 @@ const Login = () => {
                     <FaFacebookF className="text-blue-600" />
                   </button>
                   <button
-                    onClick={""}
+                    onClick={handleGoogleSignIn}
                     className="btn btn-circle hover:bg-transparent border-0 bg-slate-100 text-black font-bold normal-case text-lg"
                   >
                     <FcGoogle className="" />
