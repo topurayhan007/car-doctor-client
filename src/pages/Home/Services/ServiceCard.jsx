@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const ServiceCard = ({ service }) => {
-  const { title, img, price } = service;
+  const { _id, title, img, price } = service;
 
   return (
     <div>
@@ -18,9 +19,11 @@ const ServiceCard = ({ service }) => {
           <h2 className="card-title font-bold">{title}</h2>
           <div className="flex justify-between text-[#FF3811]">
             <h6 className="font-semibold text-lg">Price: ${price}</h6>
-            <button className="text-xl ">
-              <HiArrowNarrowRight />
-            </button>
+            <Link to={`/book/${_id}`}>
+              <button className="text-xl ">
+                <HiArrowNarrowRight />
+              </button>
+            </Link>
           </div>
         </div>
       </div>
