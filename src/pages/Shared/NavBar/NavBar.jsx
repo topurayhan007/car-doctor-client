@@ -66,7 +66,7 @@ const NavBar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-lg font-semibold">
             <li>
-              <a>Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <a>About</a>
@@ -80,6 +80,13 @@ const NavBar = () => {
             <li>
               <a>Contact</a>
             </li>
+            {user?.email ? (
+              <li>
+                <Link to="/bookings">Bookings</Link>
+              </li>
+            ) : (
+              <></>
+            )}
           </ul>
         </div>
         <div className="navbar-end gap-3 items-center">
