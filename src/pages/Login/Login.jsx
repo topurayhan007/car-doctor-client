@@ -132,7 +132,7 @@ const Login = () => {
                     to="/register"
                     className="label-text-alt font-bold text-base link link-hover ps-2 text-[#FF3811]"
                   >
-                    Sign In
+                    Sign Up
                   </Link>
                 </span>
               </p>
