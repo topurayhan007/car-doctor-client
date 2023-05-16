@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 const About = () => {
   return (
-    <div className="flex justify-center my-32">
-      <div className="hero min-h-screen lg:w-[1280px]">
+    <div className="my-32">
+      <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row justify-between gap-8">
           <div className="flex-1 relative w-full">
             <div className="top-0 left-0 rounded-lg w-4/5">

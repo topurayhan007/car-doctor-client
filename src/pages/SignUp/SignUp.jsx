@@ -44,8 +44,8 @@ const SignUp = () => {
   };
 
   return (
-    <div className="flex justify-center mt-10 mb-20">
-      <div className="hero min-h-screen lg:w-[1280px]">
+    <div className=" mt-10 mb-20">
+      <div className="hero min-h-screen">
         <div className="hero-content flex-col lg:flex-row justify-between w-full">
           <div className="text-center lg:text-left flex-1">
             <img src="/assets/images/login/login.svg" alt="" />

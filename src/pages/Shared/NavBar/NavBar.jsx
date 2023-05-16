@@ -4,8 +4,8 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 
 const NavBar = () => {
   return (
-    <div className="flex justify-center">
-      <div className="navbar bg-base-100 my-7 lg:w-[1280px]">
+    <div className="">
+      <div className="navbar bg-base-100 my-7">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

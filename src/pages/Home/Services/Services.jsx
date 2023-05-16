@@ -6,14 +6,14 @@ const Services = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("/services.json")
+    fetch("http://localhost:5000/services")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
 
   return (
-    <div className="flex justify-center text-center my-48">
-      <div className="lg:w-[1280px]">
+    <div className="text-center my-48">
+      <div className="">
         <h3 className="text-2xl text-[#FF3811] mb-5 font-bold">Service</h3>
         <h3 className="text-5xl font-bold">Our Services Area</h3>
         <p className="capitalize mb-8 mt-5 text-[#737373]">
