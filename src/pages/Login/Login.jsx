@@ -23,26 +23,9 @@ const Login = () => {
     signIn(email, password)
       .then((result) => {
         const user = result.user;
-        const loggedUser = {
-          email: user.email,
-        };
-        console.log(loggedUser);
+        console.log(user);
 
-        fetch("http://localhost:5000/jwt", {
-          method: "POST",
-          headers: {
-            "content-type": "application/json",
-          },
-          body: JSON.stringify(loggedUser),
-        })
-          .then((res) => res.json())
-          .then((data) => {
-            console.log("jwt response", data);
-            // Warning: Local storage is not the best (second best place) to store access token
-            localStorage.setItem("car-access-token", data.token);
-
-            navigate(from, { replace: true });
-          });
+        navigate(from, { replace: true });
       })
       .catch((error) => console.log(error));
   };
@@ -51,7 +34,9 @@ const Login = () => {
   const handleGoogleSignIn = () => {
     signInWithGoogle()
       .then((result) => {
-        console.log(result.user);
+        const user = result.user;
+        console.log(user);
+
         navigate(from, { replace: true });
       })
       .catch((error) => {

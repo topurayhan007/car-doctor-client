@@ -1,11 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
+import Swal from "sweetalert2";
 
 const SignUp = () => {
   const { createUser, updateUserInfo, logOut } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const handleSignUp = (event) => {
     event.preventDefault();
@@ -39,6 +41,13 @@ const SignUp = () => {
           .catch((error) => {
             console.log(error.message);
           });
+        Swal.fire(
+          "Success!",
+          "User created successfully. Please Login!",
+          "success"
+        );
+
+        navigate("/login");
       })
       .catch((error) => console.log(error));
   };
